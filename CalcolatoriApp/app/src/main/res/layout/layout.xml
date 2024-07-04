@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/inputNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a number"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/inputNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter second number"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinnerBits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:entries="@array/bits_array" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnDecimalToBinary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Decimal to Binary" />
+
+            <Button
+                android:id="@+id/btnBinaryToDecimal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Binary to Decimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Subtract" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Multiply" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnComplement2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Complemento a 2" />
+
+            <Button
+                android:id="@+id/btnToComplement2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="To Complemento a 2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnAddComplement2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add with Complemento a 2" />
+
+            <Button
+                android:id="@+id/btnSubtractComplement2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Subtract with Complemento a 2" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/inputIEEE754"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter IEEE 754 binary string"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:inputType="text"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/btnDecodeIEEE754"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decode IEEE 754"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputBinaryFixedPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter binary fixed point"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:inputType="text"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/btnFixedPointToDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fixed Point to Decimal"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

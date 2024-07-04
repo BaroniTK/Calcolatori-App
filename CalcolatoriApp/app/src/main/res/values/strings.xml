@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CalcolatoriApp</string>
+    <string-array name="bits_array">
+        <item>4 bit</item>
+        <item>8 bit</item>
+        <item>12 bit</item>
+        <item>16 bit</item>
+    </string-array>
+
+
+
+</resources>
